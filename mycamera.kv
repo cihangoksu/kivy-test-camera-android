@@ -1,0 +1,81 @@
+<CameraDisplayWidget>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self._rect_pos
+            size: self._rect_size
+            texture: self.texture
+            tex_coords: root.tex_coords
+
+<mycamera>:
+    name: 'mycamera_screen'
+    BoxLayout:
+        orientation: 'horizontal'
+        CameraDisplayWidget:
+            id: cdw
+            texture: root.texture
+            resolution:root.texture_resolution
+            size_hint_x: 60
+            
+        BoxLayout:
+            size_hint_x:20
+            orientation: 'vertical'
+            BoxLayout:
+                size_hint_y:25
+                Button:
+                    text: 'Start cam'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.start_camera()
+
+            BoxLayout:
+                size_hint_y:25
+                Button:
+                    text: 'Change cam'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.change_set_camera()
+
+            BoxLayout:
+                size_hint_y:25
+                Button:
+                    text: 'Record'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.capture_video()
+        
+            BoxLayout:
+                size_hint_y:25
+                Button:
+                    text: 'Save'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.save_video()
+
+        BoxLayout:
+            size_hint_x:20
+            orientation: 'vertical'
+            BoxLayout:
+                size_hint_y:20
+                Button:
+                    text: 'pause'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.pause_video()
+            BoxLayout:
+                size_hint_y:20
+                Button:
+                    text: 'resume'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.resume_video()
+
+            BoxLayout:
+                size_hint_y:20
+                Button:
+                    text: 'Save and record'
+                    pos: self.pos
+                    size: self.size
+                    on_press: root.save_record_video()
+
