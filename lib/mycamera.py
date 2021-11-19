@@ -59,6 +59,12 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
+###### USB stuff ######
+USBManager = autoclass("android.hardware.usb.UsbManager")
+logger.info("USB Manager is set")
+USBDevice = autoclass("android.hardware.usb.UsbDevice")
+########################
+
 CameraManager = autoclass("android.hardware.camera2.CameraManager")
 PythonActivity = autoclass("org.kivy.android.PythonActivity")
 Context = autoclass("android.content.Context")
@@ -86,6 +92,42 @@ CameraActions = autoclass("mycamera2.MyStateCallback$CameraActions")
 
 MyCaptureSessionCallback = autoclass("mycamera2.MyCaptureSessionCallback")
 CameraCaptureEvents = autoclass("mycamera2.MyCaptureSessionCallback$CameraCaptureEvents")
+
+
+
+#### Let's dig in! JAVAAAAAAAAAAAAAAAAAA #####
+mUVCCameraView = autoclass("com.serenegiant.usb.widget.CameraViewInterface")
+mUVCCameraHelper = autoclass("com.jiangdg.usbcamera.UVCCameraHelper")
+
+
+logger.info("Debug0:Start")
+print('mUVCCameraView is = ' + str(dir(mUVCCameraView)))
+logger.info("Debug0:End")
+logger.info("Debug0:Start")
+print('mUVCCameraHelper is = ' + str(dir(mUVCCameraHelper)))
+logger.info("Debug0:End")
+
+
+
+
+# mCameraHelper = UVCCameraHelper.getInstance();
+# // set default preview size
+# mCameraHelper.setDefaultPreviewSize(1280,720);
+# // set default frame format，defalut is UVCCameraHelper.Frame_FORMAT_MPEG
+# // if using mpeg can not record mp4,please try yuv
+# // mCameraHelper.setDefaultFrameFormat(UVCCameraHelper.FRAME_FORMAT_YUYV);	
+# mCameraHelper.initUSBMonitor(this, mUVCCameraView, mDevConnectListener); 
+
+
+
+
+
+
+
+
+###############################################
+
+
 
 _global_handler = Handler(Looper.getMainLooper())
 
@@ -137,7 +179,20 @@ class PyCameraInterface(EventDispatcher):
         self.java_camera_manager = cast("android.hardware.camera2.CameraManager",
                                     context.getSystemService(Context.CAMERA_SERVICE))
 
+
+        #####
+        self.java_usb_manager = cast("android.hardware.usb.UsbManager",
+                                    context.getSystemService(Context.USB_SERVICE))
+        self.usb_ids = self.java_usb_manager.getDeviceList()
+        logger.info("Got USB devices and now printing:")
+        print(self.usb_ids)
+        
+        
+        logger.info("DONE!")
+        #####
+
         self.camera_ids = self.java_camera_manager.getCameraIdList()
+
         characteristics_dict = self.java_camera_characteristics
         camera_manager = self.java_camera_manager
         logger.info("Got basic java objects")
@@ -610,6 +665,7 @@ class mycamera(Screen):
     _camera_permission_state_string = StringProperty("UNKNOWN")
     ###############################
     
+    debug_label = StringProperty()
 
     def __init__(self, **kwargs):
         self.fps = 15
@@ -631,6 +687,11 @@ class mycamera(Screen):
         print('start_camera is called')
         self.camera_interface = PyCameraInterface()
         self.camera_update = Clock.schedule_interval(self.update, 0)
+        
+        logger.info("Printing camera ID's:")
+        self.debug_label = 'Num of cam = ' + str(len(self.camera_interface.cameras))
+        logger.info("DONE!")
+
         self.debug_print_camera_info()
         self.inspect_cameras()
         self.restart_stream()
@@ -720,13 +781,17 @@ class mycamera(Screen):
 
     def inspect_cameras(self):
         cameras = self.camera_interface.cameras
-
         for camera in cameras:
             if camera.facing == "BACK":
                 self.cameras_to_use.append(camera)
         for camera in cameras:
             if camera.facing == "FRONT":
                 self.cameras_to_use.append(camera)
+        for camera in cameras:
+            if camera.facing == "EXTERNAL":
+                self.cameras_to_use.append(camera)
+
+
 
     def restart_stream(self):
         self.ensure_camera_closed()
@@ -746,6 +811,7 @@ class mycamera(Screen):
         for camera in cameras:
             print("Camera ID {}, facing {}, resolutions {}".format(
                 camera.camera_id, camera.facing, camera.supported_resolutions))
+        
 
     def stream_camera_index(self, index):
         self.attempt_stream_camera(self.camera_interface.cameras[index])
@@ -851,7 +917,9 @@ class mycamera(Screen):
     def on_resume(self):
         logger.info("Opening camera due to resume")
         self.restart_stream()
-
+    
+    def debug_test(self):
+        logger.info("test debug button is pressed")
 
 
 
@@ -911,4 +979,3 @@ class mycamera(Screen):
         self.mRecorder.release()
 
 '''
-        

@@ -1,1 +1,0 @@
-# kivy-test-camera-android

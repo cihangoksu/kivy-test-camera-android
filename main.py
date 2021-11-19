@@ -13,12 +13,12 @@ from kivy.properties import (ObjectProperty, StringProperty, BooleanProperty, Li
 import _init_paths
 from lib import mycamera
 
-
 # Create the screen manager
 Builder.load_file("mycamera.kv")
 
 sm = ScreenManager()
 sm.add_widget(mycamera.mycamera(name='mycamera_screen'))
+
 
 class cameraApp(App):
     def build(self):

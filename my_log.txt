@@ -19,11 +19,11 @@ later for copying conditions. There is NO warranty.
 #  -> found at /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool
 # Install platform
 # Run 'git config --get remote.origin.url'
-# Cwd /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/python-for-android
+# Cwd /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/python-for-android
 https://github.com/kivy/python-for-android.git
 # Run 'git branch -vv'
-# Cwd /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/python-for-android
-* develop 2f49cd67 [origin/develop] Moved support-request to v2. v1 has been shut down. (#2515)
+# Cwd /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/python-for-android
+* master 4563f3e3 [origin/master] Merge pull request #2488 from misl6/release-2021.09.05
 # Run '/home/cgoksu/anaconda3/envs/kivy/bin/python -m pip install -q  \'appdirs\' \'colorama>=0.3.3\' \'jinja2\' \'six\' \'enum34; python_version<"3.4"\' \'sh>=1.10; sys_platform!="nt"\' \'pep517<0.7.0\' \'toml\''
 # Cwd None
 # Apache ANT found at /home/cgoksu/.buildozer/android/platform/apache-ant-1.9.4
@@ -34,184 +34,517 @@ https://github.com/kivy/python-for-android.git
 # Check application requirements
 # Check garden requirements
 # Compile platform
-# Run '/home/cgoksu/anaconda3/envs/kivy/bin/python -m pythonforandroid.toolchain create --dist_name=testcamera --bootstrap=sdl2 --requirements=python3,kivy,android,pyjnius,ffpyplayer,ffpyplayer_codecs,numpy --arch armeabi-v7a --copy-libs --color=always --storage-dir="/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a" --ndk-api=21'
-# Cwd /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/python-for-android
-# Build the application #3
-# Copy application source from /home/cgoksu/kivy_trials/KivyCameraExample
-# Create directory /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app
-# Copy /home/cgoksu/kivy_trials/KivyCameraExample/mycamera.kv
-# Copy /home/cgoksu/kivy_trials/KivyCameraExample/test.png
-# Copy /home/cgoksu/kivy_trials/KivyCameraExample/main.py
-# Copy /home/cgoksu/kivy_trials/KivyCameraExample/_init_paths.py
-# Create directory /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/lib
-# Copy /home/cgoksu/kivy_trials/KivyCameraExample/lib/mycamera.py
+# Run '/home/cgoksu/anaconda3/envs/kivy/bin/python -m pythonforandroid.toolchain create --dist_name=myapp --bootstrap=sdl2 --requirements=python3,kivy,numpy --arch armeabi-v7a --copy-libs --color=always --storage-dir="/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a" --ndk-api=21'
+# Cwd /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/python-for-android
+# Build the application #82
+# Copy application source from /home/cgoksu/kivy_trials/KivyCameraExampleSimple
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/mycamera.kv
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/test.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/main.py
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/_init_paths.py
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_quarter.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_transparent.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_circle_2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_color_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_circle2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_frame.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/frame.9.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/ic_notification.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/frame_cross.9.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_quarter.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_transparent.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_circle_2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_color_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_circle2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_frame.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_drawer.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_quarter.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_transparent.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_circle_2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_color_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_circle2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_frame.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_drawer.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_quarter.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_transparent.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_circle_2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_color_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_circle2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_frame.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_video_shutter_recording_holo.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_drawer.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_default.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_quarter.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_pressed.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_video_pressed.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_transparent.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_circle_2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_color_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_video_shutter_recording_pressed_holo.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_recording_pressed_holo.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_default.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_pressed.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_video_default.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_recording_holo.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_circle2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_decrement.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_increment.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_frame.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_drawer.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_quarter.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_transparent.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_circle_2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_color_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_circle2.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_circle.png
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_frame.png
+# Create directory /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/lib
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/lib/mycamera.py
 # Package the application
+# Search and copy libs for armeabi-v7a
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jniLibs/armeabi-v7a/libjpeg-turbo1500.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/libs/armeabi-v7a/libjpeg-turbo1500.so
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jniLibs/armeabi-v7a/libTxtOverlay.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/libs/armeabi-v7a/libTxtOverlay.so
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jniLibs/armeabi-v7a/libUtils.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/libs/armeabi-v7a/libUtils.so
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jniLibs/armeabi-v7a/libuvc.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/libs/armeabi-v7a/libuvc.so
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jniLibs/armeabi-v7a/libusb100.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/libs/armeabi-v7a/libusb100.so
+# Copy /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jniLibs/armeabi-v7a/libUVCCamera.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/libs/armeabi-v7a/libUVCCamera.so
 # project.properties updated
-# Gradle project detected, copy files /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/src/main/java
-# Run '/home/cgoksu/anaconda3/envs/kivy/bin/python -m pythonforandroid.toolchain apk --debug --bootstrap=sdl2 --dist_name testcamera --name Testcamera --version 0.1 --package digigammon.com.testcamera --minsdk 21 --ndk-api 21 --private /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app --permission CAMERA --permission RECORD_AUDIO --android-entrypoint org.kivy.android.PythonActivity --android-apptheme @android:style/Theme.NoTitleBar --orientation landscape --window --copy-libs --arch armeabi-v7a --color=always --storage-dir="/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a" --ndk-api=21'
-# Cwd /home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/python-for-android
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/modules'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Build'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Build/Tests'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Compiler'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Compiler/Tests'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Debugger'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Debugger/Tests'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Distutils'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes/Deprecated'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes/cpython'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes/libc'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes/libcpp'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes/numpy'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Includes/posix'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Plex'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Runtime'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Tempita'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Tests'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython/Utility'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Cython-0.29.15-py3.8.egg-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/Kivy-2.0.0-py3.8.egg-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/_distutils_hack'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/android'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/certifi'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/certifi-2021.10.8.dist-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/ffpyplayer'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/ffpyplayer/clib'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/ffpyplayer/includes'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/ffpyplayer/player'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/ffpyplayer-4.3.2-py3.8.egg-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/jnius'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/jnius/src'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/jnius/src/org'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/jnius/src/org/jnius'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/audio'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/camera'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/clipboard'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/gl'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/image'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/spelling'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/text'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/video'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/core/window'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data/fonts'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data/glsl'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data/images'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data/keyboards'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data/logo'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/deps'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/effects'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/extras'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/garden'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/graphics'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/graphics/cgl_backend'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/include'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/input'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/input/postproc'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/input/providers'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/lang'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/lib'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/lib/gstplayer'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/lib/pango'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/lib/vidcore_lite'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/modules'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/network'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/storage'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/gles_compat'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/highlight'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/image-testsuite'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/packaging'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/packaging/pyinstaller_hooks'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/pep8checker'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/theming'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/tools/theming/defaulttheme'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/uix'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/uix/behaviors'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/uix/recycleview'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/compat'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/core'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/core/include'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/core/include/numpy'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/core/include/numpy/random'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/core/lib'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/core/lib/npy-pkg-config'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/distutils'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/distutils/command'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/distutils/fcompiler'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/distutils/mingw'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/doc'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/f2py'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/f2py/src'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/fft'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/lib'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/linalg'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/ma'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/matrixlib'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/polynomial'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/random'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/random/_examples'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/random/_examples/cffi'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/random/_examples/cython'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/random/_examples/numba'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/testing'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy/testing/_private'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/numpy-1.18.1-py3.8.egg-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/pkg_resources'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/pkg_resources/_vendor'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/pkg_resources/_vendor/packaging'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/pkg_resources/extern'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/pyjnius-1.3.0-py3.8.egg-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/pyximport'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools/_distutils'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools/_distutils/command'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools/_vendor'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools/_vendor/packaging'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools/command'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools/extern'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/setuptools-51.3.3-py3.8.egg-info'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/usr'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/usr/local'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/dists/testcamera/_python_bundle__armeabi-v7a/_python_bundle/site-packages/usr/local/bin'...
-Listing '/tmp/p4a-extra-env-u2bocjr0'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/_applibs'...
-Compiling '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/_init_paths.py'...
-Listing '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/lib'...
-Compiling '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/lib/mycamera.py'...
-Compiling '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/main.py'...
-Compiling '/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/sitecustomize.py'...
+# Gradle project detected, copy files /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java
+copy net to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/net
+copy net/inclem to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/net/inclem
+copy net/inclem/camera2 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/net/inclem/camera2
+copy net/inclem/camera2/MyStateCallback.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/net/inclem/camera2/MyStateCallback.java
+copy net/inclem/camera2/MyCaptureSessionCallback.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/net/inclem/camera2/MyCaptureSessionCallback.java
+copy libusbcamera to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera
+copy libusbcamera/src to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src
+copy libusbcamera/src/main to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main
+copy libusbcamera/src/main/AndroidManifest.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/AndroidManifest.xml
+copy libusbcamera/src/main/res to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res
+copy libusbcamera/src/main/res/values to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/values
+copy libusbcamera/src/main/res/values/dimens.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/values/dimens.xml
+copy libusbcamera/src/main/res/values/strings.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/values/strings.xml
+copy libusbcamera/src/main/res/xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/xml
+copy libusbcamera/src/main/res/xml/device_filter.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/xml/device_filter.xml
+copy libusbcamera/src/main/res/layout to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/layout
+copy libusbcamera/src/main/res/layout/dialog_camera.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/layout/dialog_camera.xml
+copy libusbcamera/src/main/res/layout/listitem_device.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/layout/listitem_device.xml
+copy libusbcamera/src/main/res/raw to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/raw
+copy libusbcamera/src/main/res/raw/camera_click.ogg to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/res/raw/camera_click.ogg
+copy libusbcamera/src/main/assets to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/assets
+copy libusbcamera/src/main/assets/zk to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/assets/zk
+copy libusbcamera/src/main/assets/zk/SIMYOU.ttf to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/assets/zk/SIMYOU.ttf
+copy libusbcamera/src/main/java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java
+copy libusbcamera/src/main/java/org to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/org
+copy libusbcamera/src/main/java/org/easydarwin to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/org/easydarwin
+copy libusbcamera/src/main/java/org/easydarwin/sw to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/org/easydarwin/sw
+copy libusbcamera/src/main/java/org/easydarwin/sw/TxtOverlay.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/org/easydarwin/sw/TxtOverlay.java
+copy libusbcamera/src/main/java/org/easydarwin/sw/JNIUtil.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/org/easydarwin/sw/JNIUtil.java
+copy libusbcamera/src/main/java/com to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com
+copy libusbcamera/src/main/java/com/jiangdg to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/jiangdg
+copy libusbcamera/src/main/java/com/jiangdg/usbcamera to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/jiangdg/usbcamera
+copy libusbcamera/src/main/java/com/jiangdg/usbcamera/UVCCameraHelper.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/jiangdg/usbcamera/UVCCameraHelper.java
+copy libusbcamera/src/main/java/com/jiangdg/usbcamera/utils to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/jiangdg/usbcamera/utils
+copy libusbcamera/src/main/java/com/jiangdg/usbcamera/utils/FileUtils.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/jiangdg/usbcamera/utils/FileUtils.java
+copy libusbcamera/src/main/java/com/serenegiant to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant
+copy libusbcamera/src/main/java/com/serenegiant/usb to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb
+copy libusbcamera/src/main/java/com/serenegiant/usb/USBMonitor.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/USBMonitor.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/IButtonCallback.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/IButtonCallback.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/Size.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/Size.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/USBVendorId.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/USBVendorId.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/IStatusCallback.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/IStatusCallback.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/common to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/common
+copy libusbcamera/src/main/java/com/serenegiant/usb/common/UVCCameraHandler.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/common/UVCCameraHandler.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/common/AbstractUVCCameraHandler.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/common/AbstractUVCCameraHandler.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/common/UVCCameraHandlerMultiSurface.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/common/UVCCameraHandlerMultiSurface.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaSurfaceEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaSurfaceEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaMuxerWrapper.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaMuxerWrapper.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaVideoBufferEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaVideoBufferEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/RecordParams.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/RecordParams.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaVideoEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaVideoEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaAudioEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaAudioEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz/AACEncodeConsumer.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz/AACEncodeConsumer.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz/Mp4MediaMuxer.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz/Mp4MediaMuxer.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz/H264EncodeConsumer.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/biz/H264EncodeConsumer.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/MediaEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/IVideoEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/IVideoEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/encoder/IAudioEncoder.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/encoder/IAudioEncoder.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/UVCCamera.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/UVCCamera.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/CameraDialog.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/CameraDialog.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/DeviceFilter.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/DeviceFilter.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/widget to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/widget
+copy libusbcamera/src/main/java/com/serenegiant/usb/widget/AspectRatioTextureView.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/widget/AspectRatioTextureView.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/widget/CameraViewInterface.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/widget/CameraViewInterface.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/widget/IAspectRatioView2.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/widget/IAspectRatioView2.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/widget/UVCCameraTextureView.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/widget/UVCCameraTextureView.java
+copy libusbcamera/src/main/java/com/serenegiant/usb/IFrameCallback.java to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/java/com/serenegiant/usb/IFrameCallback.java
+copy libusbcamera/src/main/jniLibs to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs
+copy libusbcamera/src/main/jniLibs/x86 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86
+copy libusbcamera/src/main/jniLibs/x86/libjpeg-turbo1500.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86/libjpeg-turbo1500.so
+copy libusbcamera/src/main/jniLibs/x86/libuvc.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86/libuvc.so
+copy libusbcamera/src/main/jniLibs/x86/libusb100.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86/libusb100.so
+copy libusbcamera/src/main/jniLibs/x86/libUVCCamera.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86/libUVCCamera.so
+copy libusbcamera/src/main/jniLibs/x86_64 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86_64
+copy libusbcamera/src/main/jniLibs/x86_64/libjpeg-turbo1500.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86_64/libjpeg-turbo1500.so
+copy libusbcamera/src/main/jniLibs/x86_64/libuvc.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86_64/libuvc.so
+copy libusbcamera/src/main/jniLibs/x86_64/libusb100.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86_64/libusb100.so
+copy libusbcamera/src/main/jniLibs/x86_64/libUVCCamera.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/x86_64/libUVCCamera.so
+copy libusbcamera/src/main/jniLibs/armeabi-v7a to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a
+copy libusbcamera/src/main/jniLibs/armeabi-v7a/libjpeg-turbo1500.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a/libjpeg-turbo1500.so
+copy libusbcamera/src/main/jniLibs/armeabi-v7a/libTxtOverlay.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a/libTxtOverlay.so
+copy libusbcamera/src/main/jniLibs/armeabi-v7a/libUtils.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a/libUtils.so
+copy libusbcamera/src/main/jniLibs/armeabi-v7a/libuvc.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a/libuvc.so
+copy libusbcamera/src/main/jniLibs/armeabi-v7a/libusb100.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a/libusb100.so
+copy libusbcamera/src/main/jniLibs/armeabi-v7a/libUVCCamera.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/armeabi-v7a/libUVCCamera.so
+copy libusbcamera/src/main/jniLibs/arm64-v8a to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a
+copy libusbcamera/src/main/jniLibs/arm64-v8a/libjpeg-turbo1500.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a/libjpeg-turbo1500.so
+copy libusbcamera/src/main/jniLibs/arm64-v8a/libTxtOverlay.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a/libTxtOverlay.so
+copy libusbcamera/src/main/jniLibs/arm64-v8a/libUtils.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a/libUtils.so
+copy libusbcamera/src/main/jniLibs/arm64-v8a/libuvc.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a/libuvc.so
+copy libusbcamera/src/main/jniLibs/arm64-v8a/libusb100.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a/libusb100.so
+copy libusbcamera/src/main/jniLibs/arm64-v8a/libUVCCamera.so to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/src/main/jniLibs/arm64-v8a/libUVCCamera.so
+copy libusbcamera/libs to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs
+copy libusbcamera/libs/libusbcommon_v4.1.1.jar to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1.jar
+copy libusbcamera/libs/libusbcommon_v4.1.1.aar to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1.aar
+copy libusbcamera/libs/libusbcommon_v4.1.1 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1
+copy libusbcamera/libs/libusbcommon_v4.1.1/mipmap-ldpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/mipmap-ldpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/AndroidManifest.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/AndroidManifest.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/R.txt to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/R.txt
+copy libusbcamera/libs/libusbcommon_v4.1.1/values to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/values
+copy libusbcamera/libs/libusbcommon_v4.1.1/res to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_quarter.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_quarter.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_transparent.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_transparent.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_circle_2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_circle_2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_color_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_color_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_circle2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_circle2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_cross_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_frame.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4/ic_frame_frame.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/values to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/values
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/values/values.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/values/values.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_shutter_video_recording.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_shutter_video_recording.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/transparent_rect.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/transparent_rect.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/frame.9.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/frame.9.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_new_shutter_video.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_new_shutter_video.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/recordingtime.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/recordingtime.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/quater_clear_rect.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/quater_clear_rect.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/border_gray.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/border_gray.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_new_shutter.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_new_shutter.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/toggle_slide.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/toggle_slide.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/mask_circle.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/mask_circle.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/toggle.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/toggle.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_repeat_shutter_recording.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/btn_repeat_shutter_recording.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/ic_notification.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/ic_notification.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/border.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/border.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/toggle_button_base.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/toggle_button_base.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/frame_cross.9.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/frame_cross.9.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/border_black.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable/border_black.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_quarter.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_quarter.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_transparent.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_transparent.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_circle_2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_circle_2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_color_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_color_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_circle2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_circle2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_cross_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_frame.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4/ic_frame_frame.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/values-ja to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/values-ja
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/values-ja/values-ja.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/values-ja/values-ja.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_drawer.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_drawer.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_quarter.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_quarter.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_transparent.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_transparent.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_circle_2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_circle_2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_color_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_color_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_circle2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_circle2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_cross_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_frame.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4/ic_frame_frame.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/anim to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/anim
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_in_right.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_in_right.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_in_left.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_in_left.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_out_right.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_out_right.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_out_left.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/anim/slide_out_left.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_drawer.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_drawer.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_quarter.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_quarter.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_transparent.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_transparent.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_circle_2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_circle_2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_color_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_color_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_circle2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_circle2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_cross_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_frame.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4/ic_frame_frame.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/list_item_bluetooth_device_info.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/list_item_bluetooth_device_info.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/view_frame_selector.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/view_frame_selector.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/checkbox_dont_ahow_again.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/checkbox_dont_ahow_again.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/seekbar_preference.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/seekbar_preference.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/color_picker.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/color_picker.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/color_picker_dialog.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/color_picker_dialog.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/layout/item_picker.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/layout/item_picker.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_video_shutter_recording_holo.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_video_shutter_recording_holo.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_drawer.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_drawer.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_default.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_default.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_quarter.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_quarter.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_pressed.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_pressed.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_video_pressed.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_video_pressed.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_transparent.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_transparent.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_circle_2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_circle_2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_color_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_color_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_video_shutter_recording_pressed_holo.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_video_shutter_recording_pressed_holo.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_recording_pressed_holo.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_recording_pressed_holo.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_default.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_default.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_pressed.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_pressed.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_video_default.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_shutter_video_default.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_recording_holo.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/btn_repeat_shutter_recording_holo.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_circle2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_circle2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_decrement.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_decrement.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_increment.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_increment.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_cross_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_frame.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4/ic_frame_frame.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_drawer.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_drawer.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_quarter.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_quarter.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_transparent.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_transparent.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_circle_2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_circle_2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_color_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_color_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_circle2.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_circle2.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_circle.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_cross_circle.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_frame.png to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4/ic_frame_frame.png
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable-v21 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable-v21
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/drawable-v21/star.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable-v21/star.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/animator to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/animator
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_right_out.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_right_out.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_left_out.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_left_out.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_right_in.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_right_in.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_left_in.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/animator/card_flip_left_in.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/values-sw600dp-v13 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/values-sw600dp-v13
+copy libusbcamera/libs/libusbcommon_v4.1.1/res/values-sw600dp-v13/values-sw600dp-v13.xml to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/res/values-sw600dp-v13/values-sw600dp-v13.xml
+copy libusbcamera/libs/libusbcommon_v4.1.1/drawable to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/drawable
+copy libusbcamera/libs/libusbcommon_v4.1.1/mipmap-xxxhdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/mipmap-xxxhdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/values-ja to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/values-ja
+copy libusbcamera/libs/libusbcommon_v4.1.1/mipmap-mdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/mipmap-mdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/anim to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/anim
+copy libusbcamera/libs/libusbcommon_v4.1.1/mipmap-xxhdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/mipmap-xxhdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/layout to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/layout
+copy libusbcamera/libs/libusbcommon_v4.1.1/annotations.zip to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/annotations.zip
+copy libusbcamera/libs/libusbcommon_v4.1.1/mipmap-hdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/mipmap-hdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/mipmap-xhdpi-v4 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/mipmap-xhdpi-v4
+copy libusbcamera/libs/libusbcommon_v4.1.1/drawable-v21 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/drawable-v21
+copy libusbcamera/libs/libusbcommon_v4.1.1/classes.jar to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/classes.jar
+copy libusbcamera/libs/libusbcommon_v4.1.1/animator to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/animator
+copy libusbcamera/libs/libusbcommon_v4.1.1/values-sw600dp-v13 to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/libs/libusbcommon_v4.1.1/values-sw600dp-v13
+copy libusbcamera/proguard-rules.pro to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/proguard-rules.pro
+copy libusbcamera/build.gradle to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/build.gradle
+copy libusbcamera/.gitignore to /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/src/main/java/libusbcamera/.gitignore
+# Run '/home/cgoksu/anaconda3/envs/kivy/bin/python -m pythonforandroid.toolchain apk --debug --bootstrap=sdl2 --dist_name myapp --name \'My Application\' --version 0.1 --package org.test.myapp --minsdk 21 --ndk-api 21 --private /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app --permission CAMERA --permission RECORD_AUDIO --android-entrypoint org.kivy.android.PythonActivity --android-apptheme @android:style/Theme.NoTitleBar --add-compile-option "sourceCompatibility = 1.8" --add-compile-option "targetCompatibility = 1.8" --add-gradle-repository "maven { url \'https://jitpack.io\' }" --add-jar /home/cgoksu/kivy_trials/KivyCameraExampleSimple/jarfiles/R.jar --orientation landscape --window --copy-libs --add-aar /home/cgoksu/kivy_trials/KivyCameraExampleSimple/libusbcamera/libs/libusbcommon_v4.1.1.aar --arch armeabi-v7a --color=always --storage-dir="/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a" --ndk-api=21'
+# Cwd /home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/python-for-android
+Listing '/tmp/p4a-extra-env-u376wt31'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/_applibs'...
+Compiling '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/_init_paths.py'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/lib'...
+Compiling '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/lib/mycamera.py'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/drawable'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-hdpi-v4'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-ldpi-v4'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-mdpi-v4'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xhdpi-v4'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxhdpi-v4'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/libusbcamera/libs/libusbcommon_v4.1.1/res/mipmap-xxxhdpi-v4'...
+Compiling '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/main.py'...
+Compiling '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/app/sitecustomize.py'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/modules'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Build'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Build/Tests'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Compiler'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Compiler/Tests'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Debugger'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Debugger/Tests'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Distutils'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes/Deprecated'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes/cpython'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes/libc'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes/libcpp'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes/numpy'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Includes/posix'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Plex'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Runtime'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Tempita'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Tests'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython/Utility'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Cython-0.29.15-py3.8.egg-info'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/Kivy-2.0.0-py3.8.egg-info'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/_distutils_hack'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/android'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/certifi'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/certifi-2021.10.8.dist-info'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/jnius'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/jnius/src'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/jnius/src/org'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/jnius/src/org/jnius'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/audio'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/camera'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/clipboard'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/gl'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/image'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/spelling'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/text'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/video'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/core/window'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/data'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/data/fonts'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/data/glsl'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/data/images'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/data/keyboards'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/data/logo'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/deps'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/effects'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/extras'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/garden'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/graphics'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/graphics/cgl_backend'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/include'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/input'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/input/postproc'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/input/providers'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/lang'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/lib'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/lib/gstplayer'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/lib/pango'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/lib/vidcore_lite'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/modules'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/network'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/storage'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/gles_compat'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/highlight'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/image-testsuite'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/packaging'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/packaging/pyinstaller_hooks'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/pep8checker'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/theming'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/tools/theming/defaulttheme'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/uix'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/uix/behaviors'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/kivy/uix/recycleview'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/compat'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/core'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/core/include'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/core/include/numpy'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/core/include/numpy/random'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/core/lib'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/core/lib/npy-pkg-config'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/distutils'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/distutils/command'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/distutils/fcompiler'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/distutils/mingw'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/doc'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/f2py'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/f2py/src'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/fft'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/lib'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/linalg'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/ma'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/matrixlib'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/polynomial'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/random'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/random/_examples'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/random/_examples/cffi'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/random/_examples/cython'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/random/_examples/numba'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/testing'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy/testing/_private'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/numpy-1.18.1-py3.8.egg-info'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/pkg_resources'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/pkg_resources/_vendor'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/pkg_resources/_vendor/packaging'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/pkg_resources/extern'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/pyjnius-1.3.0-py3.8.egg-info'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/pyximport'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools/_distutils'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools/_distutils/command'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools/_vendor'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools/_vendor/packaging'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools/command'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools/extern'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/setuptools-51.3.3-py3.8.egg-info'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/usr'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/usr/local'...
+Listing '/home/cgoksu/kivy_trials/KivyCameraExampleSimple/.buildozer/android/platform/build-armeabi-v7a/dists/myapp__armeabi-v7a/_python_bundle/_python_bundle/site-packages/usr/local/bin'...
 WARNING: Received a --sdk argument, but this argument is deprecated and does nothing.
 No setup.py/pyproject.toml used, copying full private data into .apk.
 Applying Java source code patches...
 Applying patch: src/patches/SDLActivity.java.patch
 Warning: failed to apply patch (exit code 1), assuming it is already applied:  src/patches/SDLActivity.java.patch
 # Android packaging done!
-# APK testcamera-0.1-armeabi-v7a-debug.apk available in the bin directory
+# APK myapp-0.1-armeabi-v7a-debug.apk available in the bin directory
 # Run '/home/cgoksu/.buildozer/android/platform/android-sdk/platform-tools/adb devices'
 # Cwd None
 List of devices attached
 11111JEC206782	device
 
 # Deploy on 11111JEC206782
-# Run '/home/cgoksu/.buildozer/android/platform/android-sdk/platform-tools/adb install -r "/home/cgoksu/kivy_trials/KivyCameraExample/bin/testcamera-0.1-armeabi-v7a-debug.apk"'
+# Run '/home/cgoksu/.buildozer/android/platform/android-sdk/platform-tools/adb install -r "/home/cgoksu/kivy_trials/KivyCameraExampleSimple/bin/myapp-0.1-armeabi-v7a-debug.apk"'
 # Cwd /home/cgoksu/.buildozer/android/platform
 Performing Streamed Install
 Success
 # Application pushed.
 # Run on 11111JEC206782
-# Run '/home/cgoksu/.buildozer/android/platform/android-sdk/platform-tools/adb shell am start -n digigammon.com.testcamera/org.kivy.android.PythonActivity -a org.kivy.android.PythonActivity'
+# Run '/home/cgoksu/.buildozer/android/platform/android-sdk/platform-tools/adb shell am start -n org.test.myapp/org.kivy.android.PythonActivity -a org.kivy.android.PythonActivity'
 # Cwd /home/cgoksu/.buildozer/android/platform
-Starting: Intent { act=org.kivy.android.PythonActivity cmp=digigammon.com.testcamera/org.kivy.android.PythonActivity }
+Starting: Intent { act=org.kivy.android.PythonActivity cmp=org.test.myapp/org.kivy.android.PythonActivity }
 # Application started.
 # Run 'dpkg --version'
 # Cwd None
@@ -229,248 +562,137 @@ later for copying conditions. There is NO warranty.
 # Run '/home/cgoksu/.buildozer/android/platform/android-sdk/platform-tools/adb logcat *:S python:D'
 # Cwd /home/cgoksu/.buildozer/android/platform
 --------- beginning of main
-11-11 13:49:24.822  9087  9559 I python  : Initializing Python for Android
-11-11 13:49:24.822  9087  9559 I python  : Setting additional env vars from p4a_env_vars.txt
-11-11 13:49:24.822  9087  9559 I python  : Changing directory to the one provided by ANDROID_ARGUMENT
-11-11 13:49:24.822  9087  9559 I python  : /data/user/0/digigammon.com.testcamera/files/app
-11-11 13:49:24.822  9087  9559 I python  : Preparing to initialize python
-11-11 13:49:24.822  9087  9559 I python  : _python_bundle dir exists
-11-11 13:49:24.822  9087  9559 I python  : calculated paths to be...
-11-11 13:49:24.822  9087  9559 I python  : /data/user/0/digigammon.com.testcamera/files/app/_python_bundle/stdlib.zip:/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/modules
-11-11 13:49:24.823  9087  9559 I python  : set wchar paths...
-11-11 13:49:24.886  9087  9559 I python  : Initialized python
-11-11 13:49:24.886  9087  9559 I python  : AND: Init threads
-11-11 13:49:24.887  9087  9559 I python  : testing python print redirection
-11-11 13:49:24.888  9087  9559 I python  : Android path ['.', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/stdlib.zip', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/modules', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/site-packages']
-11-11 13:49:24.888  9087  9559 I python  : os.environ is environ({'PATH': '/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin', 'ANDROID_BOOTLOGO': '1', 'ANDROID_ROOT': '/system', 'ANDROID_ASSETS': '/system/app', 'ANDROID_DATA': '/data', 'ANDROID_STORAGE': '/storage', 'ANDROID_ART_ROOT': '/apex/com.android.art', 'ANDROID_I18N_ROOT': '/apex/com.android.i18n', 'ANDROID_TZDATA_ROOT': '/apex/com.android.tzdata', 'EXTERNAL_STORAGE': '/sdcard', 'ASEC_MOUNTPOINT': '/mnt/asec', 'DOWNLOAD_CACHE': '/data/cache', 'BOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.wifi/javalib/framework-wifi.jar', 'DEX2OATBOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar', 'SYSTEMSERVERCLASSPATH': '/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.permission/javalib/service-permission.jar', 'ANDROID_SOCKET_zygote_secondary': '17', 'ANDROID_SOCKET_usap_pool_secondary': '20', 'ANDROID_ENTRYPOINT': 'main.pyc', 'ANDROID_ARGUMENT': '/data/user/0/digigammon.com.testcamera/files/app', 'ANDROID_APP_PATH': '/data/user/0/digigammon.com.testcamera/files/app', 'ANDROID_PRIVATE': '/data/user/0/digigammon.com.testcamera/files', 'ANDROID_UNPACK': '/data/user/0/digigammon.com.testcamera/files/app', 'PYTHONHOME': '/data/user/0/digigammon.com.testcamera/files/app', 'PYTHONPATH': '/data/user/0/digigammon.com.testcamera/files/app:/data/user/0/digigammon.com.testcamera/files/app/lib', 'PYTHONOPTIMIZE': '2', 'P4A_BOOTSTRAP': 'SDL2', 'PYTHON_NAME': 'python', 'P4A_IS_WINDOWED': 'True', 'P4A_ORIENTATION': 'landscape', 'P4A_NUMERIC_VERSION': 'None', 'P4A_MINSDK': '21', 'LC_CTYPE': 'C.UTF-8'})
-11-11 13:49:24.888  9087  9559 I python  : Android kivy bootstrap done. __name__ is __main__
-11-11 13:49:24.888  9087  9559 I python  : AND: Ran string
-11-11 13:49:24.888  9087  9559 I python  : Run user program, change dir and execute entrypoint
-11-11 13:49:25.007  9087  9559 I python  : [WARNING] [Config      ] Older configuration version detected (0 instead of 21)
-11-11 13:49:25.007  9087  9559 I python  : [WARNING] [Config      ] Upgrading configuration in progress.
-11-11 13:49:25.013  9087  9559 I python  : [INFO   ] [Logger      ] Record log in /data/user/0/digigammon.com.testcamera/files/app/.kivy/logs/kivy_21-11-11_0.txt
-11-11 13:49:25.013  9087  9559 I python  : [INFO   ] [Kivy        ] v2.0.0
-11-11 13:49:25.013  9087  9559 I python  : [INFO   ] [Kivy        ] Installed at "/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/site-packages/kivy/__init__.pyc"
-11-11 13:49:25.013  9087  9559 I python  : [INFO   ] [Python      ] v3.8.9 (default, Nov 11 2021, 13:17:54) 
-11-11 13:49:25.013  9087  9559 I python  : [Clang 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec7462
-11-11 13:49:25.013  9087  9559 I python  : [INFO   ] [Python      ] Interpreter at ""
-11-11 13:49:25.790  9087  9559 I python  : [INFO   ] [Factory     ] 186 symbols loaded
-11-11 13:49:25.836  9087  9559 I python  : [INFO   ] [ImageLoaderFFPy] Using ffpyplayer 4.3.2
-11-11 13:49:25.836  9087  9559 I python  : [INFO   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_ffpyplayer (img_pil ignored)
-11-11 13:49:26.016  9087  9559 I python  : [INFO   ] [Window      ] Provider: sdl2
-11-11 13:49:26.040  9087  9559 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
-11-11 13:49:26.040  9087  9559 I python  : [INFO   ] [GL          ] Backend used <sdl2>
-11-11 13:49:26.041  9087  9559 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@0490.0 (GIT@85da404, I46ff5fc46f, 1606801434) (Date:11/30/20)'>
-11-11 13:49:26.041  9087  9559 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
-11-11 13:49:26.041  9087  9559 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 618'>
-11-11 13:49:26.041  9087  9559 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
-11-11 13:49:26.041  9087  9559 I python  : [INFO   ] [GL          ] Texture max size <16384>
-11-11 13:49:26.041  9087  9559 I python  : [INFO   ] [GL          ] Texture max units <16>
-11-11 13:49:26.066  9087  9559 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
-11-11 13:49:26.067  9087  9559 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
-11-11 13:49:26.286  9087  9087 I python  : [INFO   ] [WindowSDL   ] No running App found, pause.
-11-11 13:49:26.325  9087  9559 I python  : SDCARD is on :
-11-11 13:49:26.325  9087  9559 I python  : /storage/emulated/0
-11-11 13:49:26.325  9087  9559 I python  : The platform is Android
-11-11 13:49:26.609  9087  9559 I python  :  Traceback (most recent call last):
-11-11 13:49:26.609  9087  9559 I python  :    File "/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/main.py", line 14, in <module>
-11-11 13:49:26.610  9087  9559 I python  :    File "/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/lib/mycamera.py", line 83, in <module>
-11-11 13:49:26.610  9087  9559 I python  :    File "/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/testcamera/armeabi-v7a/jnius/reflect.py", line 229, in autoclass
-11-11 13:49:26.611  9087  9559 I python  :    File "jnius/jnius_export_func.pxi", line 26, in jnius.jnius.find_javaclass
-11-11 13:49:26.611  9087  9559 I python  :    File "jnius/jnius_utils.pxi", line 91, in jnius.jnius.check_exception
-11-11 13:49:26.612  9087  9559 I python  :  jnius.jnius.JavaException: JVM exception occurred: Didn't find class "mycamera2.MyStateCallback" on path: DexPathList[[zip file "/data/app/~~4ajG0s-GLKMgG7cvLCDRqw==/digigammon.com.testcamera-W_nBdvBnpBcSi9iPEyvkhQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~4ajG0s-GLKMgG7cvLCDRqw==/digigammon.com.testcamera-W_nBdvBnpBcSi9iPEyvkhQ==/lib/arm, /data/app/~~4ajG0s-GLKMgG7cvLCDRqw==/digigammon.com.testcamera-W_nBdvBnpBcSi9iPEyvkhQ==/base.apk!/lib/armeabi-v7a, /system/lib, /system_ext/lib]] java.lang.ClassNotFoundException
-11-11 13:49:26.612  9087  9559 I python  : Python for android ended.
-11-11 13:49:51.360  9655  9694 I python  : Initializing Python for Android
-11-11 13:49:51.360  9655  9694 I python  : Setting additional env vars from p4a_env_vars.txt
-11-11 13:49:51.360  9655  9694 I python  : Changing directory to the one provided by ANDROID_ARGUMENT
-11-11 13:49:51.360  9655  9694 I python  : /data/user/0/digigammon.com.testcamera/files/app
-11-11 13:49:51.360  9655  9694 I python  : Preparing to initialize python
-11-11 13:49:51.360  9655  9694 I python  : _python_bundle dir exists
-11-11 13:49:51.360  9655  9694 I python  : calculated paths to be...
-11-11 13:49:51.360  9655  9694 I python  : /data/user/0/digigammon.com.testcamera/files/app/_python_bundle/stdlib.zip:/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/modules
-11-11 13:49:51.361  9655  9694 I python  : set wchar paths...
-11-11 13:49:51.392  9655  9694 I python  : Initialized python
-11-11 13:49:51.392  9655  9694 I python  : AND: Init threads
-11-11 13:49:51.392  9655  9694 I python  : testing python print redirection
-11-11 13:49:51.393  9655  9694 I python  : Android path ['.', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/stdlib.zip', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/modules', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/site-packages']
-11-11 13:49:51.393  9655  9694 I python  : os.environ is environ({'PATH': '/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin', 'ANDROID_BOOTLOGO': '1', 'ANDROID_ROOT': '/system', 'ANDROID_ASSETS': '/system/app', 'ANDROID_DATA': '/data', 'ANDROID_STORAGE': '/storage', 'ANDROID_ART_ROOT': '/apex/com.android.art', 'ANDROID_I18N_ROOT': '/apex/com.android.i18n', 'ANDROID_TZDATA_ROOT': '/apex/com.android.tzdata', 'EXTERNAL_STORAGE': '/sdcard', 'ASEC_MOUNTPOINT': '/mnt/asec', 'DOWNLOAD_CACHE': '/data/cache', 'BOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.wifi/javalib/framework-wifi.jar', 'DEX2OATBOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar', 'SYSTEMSERVERCLASSPATH': '/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.permission/javalib/service-permission.jar', 'ANDROID_SOCKET_zygote_secondary': '17', 'ANDROID_SOCKET_usap_pool_secondary': '20', 'ANDROID_ENTRYPOINT': 'main.pyc', 'ANDROID_ARGUMENT': '/data/user/0/digigammon.com.testcamera/files/app', 'ANDROID_APP_PATH': '/data/user/0/digigammon.com.testcamera/files/app', 'ANDROID_PRIVATE': '/data/user/0/digigammon.com.testcamera/files', 'ANDROID_UNPACK': '/data/user/0/digigammon.com.testcamera/files/app', 'PYTHONHOME': '/data/user/0/digigammon.com.testcamera/files/app', 'PYTHONPATH': '/data/user/0/digigammon.com.testcamera/files/app:/data/user/0/digigammon.com.testcamera/files/app/lib', 'PYTHONOPTIMIZE': '2', 'P4A_BOOTSTRAP': 'SDL2', 'PYTHON_NAME': 'python', 'P4A_IS_WINDOWED': 'True', 'P4A_ORIENTATION': 'landscape', 'P4A_NUMERIC_VERSION': 'None', 'P4A_MINSDK': '21', 'LC_CTYPE': 'C.UTF-8'})
-11-11 13:49:51.393  9655  9694 I python  : Android kivy bootstrap done. __name__ is __main__
-11-11 13:49:51.393  9655  9694 I python  : AND: Ran string
-11-11 13:49:51.393  9655  9694 I python  : Run user program, change dir and execute entrypoint
-11-11 13:49:51.470  9655  9694 I python  : [INFO   ] [Logger      ] Record log in /data/user/0/digigammon.com.testcamera/files/app/.kivy/logs/kivy_21-11-11_1.txt
-11-11 13:49:51.470  9655  9694 I python  : [INFO   ] [Kivy        ] v2.0.0
-11-11 13:49:51.471  9655  9694 I python  : [INFO   ] [Kivy        ] Installed at "/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/site-packages/kivy/__init__.pyc"
-11-11 13:49:51.471  9655  9694 I python  : [INFO   ] [Python      ] v3.8.9 (default, Nov 11 2021, 13:17:54) 
-11-11 13:49:51.471  9655  9694 I python  : [Clang 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec7462
-11-11 13:49:51.471  9655  9694 I python  : [INFO   ] [Python      ] Interpreter at ""
-11-11 13:49:51.471  9655  9694 I python  : [INFO   ] [Logger      ] Purge log fired. Analysing...
-11-11 13:49:51.471  9655  9694 I python  : [INFO   ] [Logger      ] Purge finished!
-11-11 13:49:52.116  9655  9694 I python  : [INFO   ] [Factory     ] 186 symbols loaded
-11-11 13:49:52.163  9655  9694 I python  : [INFO   ] [ImageLoaderFFPy] Using ffpyplayer 4.3.2
-11-11 13:49:52.164  9655  9694 I python  : [INFO   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_ffpyplayer (img_pil ignored)
-11-11 13:49:52.333  9655  9694 I python  : [INFO   ] [Window      ] Provider: sdl2
-11-11 13:49:52.350  9655  9694 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
-11-11 13:49:52.351  9655  9694 I python  : [INFO   ] [GL          ] Backend used <sdl2>
-11-11 13:49:52.351  9655  9694 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@0490.0 (GIT@85da404, I46ff5fc46f, 1606801434) (Date:11/30/20)'>
-11-11 13:49:52.351  9655  9694 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
-11-11 13:49:52.351  9655  9694 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 618'>
-11-11 13:49:52.351  9655  9694 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
-11-11 13:49:52.352  9655  9694 I python  : [INFO   ] [GL          ] Texture max size <16384>
-11-11 13:49:52.352  9655  9694 I python  : [INFO   ] [GL          ] Texture max units <16>
-11-11 13:49:52.363  9655  9694 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
-11-11 13:49:52.364  9655  9694 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
-11-11 13:49:52.541  9655  9655 I python  : [INFO   ] [WindowSDL   ] No running App found, pause.
-11-11 13:49:52.576  9655  9694 I python  : SDCARD is on :
-11-11 13:49:52.576  9655  9694 I python  : /storage/emulated/0
-11-11 13:49:52.576  9655  9694 I python  : The platform is Android
-11-11 13:49:52.840  9655  9694 I python  :  Traceback (most recent call last):
-11-11 13:49:52.840  9655  9694 I python  :    File "/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/main.py", line 14, in <module>
-11-11 13:49:52.840  9655  9694 I python  :    File "/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/app/lib/mycamera.py", line 83, in <module>
-11-11 13:49:52.841  9655  9694 I python  :    File "/home/cgoksu/kivy_trials/KivyCameraExample/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/testcamera/armeabi-v7a/jnius/reflect.py", line 229, in autoclass
-11-11 13:49:52.841  9655  9694 I python  :    File "jnius/jnius_export_func.pxi", line 26, in jnius.jnius.find_javaclass
-11-11 13:49:52.841  9655  9694 I python  :    File "jnius/jnius_utils.pxi", line 91, in jnius.jnius.check_exception
-11-11 13:49:52.842  9655  9694 I python  :  jnius.jnius.JavaException: JVM exception occurred: Didn't find class "mycamera2.MyStateCallback" on path: DexPathList[[zip file "/data/app/~~4ajG0s-GLKMgG7cvLCDRqw==/digigammon.com.testcamera-W_nBdvBnpBcSi9iPEyvkhQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~4ajG0s-GLKMgG7cvLCDRqw==/digigammon.com.testcamera-W_nBdvBnpBcSi9iPEyvkhQ==/lib/arm, /data/app/~~4ajG0s-GLKMgG7cvLCDRqw==/digigammon.com.testcamera-W_nBdvBnpBcSi9iPEyvkhQ==/base.apk!/lib/armeabi-v7a, /system/lib, /system_ext/lib]] java.lang.ClassNotFoundException
-11-11 13:49:52.842  9655  9694 I python  : Python for android ended.
-11-11 14:03:26.351 10360 10452 I python  : Initializing Python for Android
-11-11 14:03:26.351 10360 10452 I python  : Setting additional env vars from p4a_env_vars.txt
-11-11 14:03:26.351 10360 10452 I python  : Changing directory to the one provided by ANDROID_ARGUMENT
-11-11 14:03:26.351 10360 10452 I python  : /data/user/0/digigammon.com.testcamera/files/app
-11-11 14:03:26.351 10360 10452 I python  : Preparing to initialize python
-11-11 14:03:26.351 10360 10452 I python  : _python_bundle dir exists
-11-11 14:03:26.351 10360 10452 I python  : calculated paths to be...
-11-11 14:03:26.351 10360 10452 I python  : /data/user/0/digigammon.com.testcamera/files/app/_python_bundle/stdlib.zip:/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/modules
-11-11 14:03:26.352 10360 10452 I python  : set wchar paths...
-11-11 14:03:26.387 10360 10452 I python  : Initialized python
-11-11 14:03:26.387 10360 10452 I python  : AND: Init threads
-11-11 14:03:26.388 10360 10452 I python  : testing python print redirection
-11-11 14:03:26.388 10360 10452 I python  : Android path ['.', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/stdlib.zip', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/modules', '/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/site-packages']
-11-11 14:03:26.389 10360 10452 I python  : os.environ is environ({'PATH': '/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin', 'ANDROID_BOOTLOGO': '1', 'ANDROID_ROOT': '/system', 'ANDROID_ASSETS': '/system/app', 'ANDROID_DATA': '/data', 'ANDROID_STORAGE': '/storage', 'ANDROID_ART_ROOT': '/apex/com.android.art', 'ANDROID_I18N_ROOT': '/apex/com.android.i18n', 'ANDROID_TZDATA_ROOT': '/apex/com.android.tzdata', 'EXTERNAL_STORAGE': '/sdcard', 'ASEC_MOUNTPOINT': '/mnt/asec', 'DOWNLOAD_CACHE': '/data/cache', 'BOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.wifi/javalib/framework-wifi.jar', 'DEX2OATBOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar', 'SYSTEMSERVERCLASSPATH': '/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.permission/javalib/service-permission.jar', 'ANDROID_SOCKET_zygote_secondary': '17', 'ANDROID_SOCKET_usap_pool_secondary': '20', 'ANDROID_ENTRYPOINT': 'main.pyc', 'ANDROID_ARGUMENT': '/data/user/0/digigammon.com.testcamera/files/app', 'ANDROID_APP_PATH': '/data/user/0/digigammon.com.testcamera/files/app', 'ANDROID_PRIVATE': '/data/user/0/digigammon.com.testcamera/files', 'ANDROID_UNPACK': '/data/user/0/digigammon.com.testcamera/files/app', 'PYTHONHOME': '/data/user/0/digigammon.com.testcamera/files/app', 'PYTHONPATH': '/data/user/0/digigammon.com.testcamera/files/app:/data/user/0/digigammon.com.testcamera/files/app/lib', 'PYTHONOPTIMIZE': '2', 'P4A_BOOTSTRAP': 'SDL2', 'PYTHON_NAME': 'python', 'P4A_IS_WINDOWED': 'True', 'P4A_ORIENTATION': 'landscape', 'P4A_NUMERIC_VERSION': 'None', 'P4A_MINSDK': '21', 'LC_CTYPE': 'C.UTF-8'})
-11-11 14:03:26.389 10360 10452 I python  : Android kivy bootstrap done. __name__ is __main__
-11-11 14:03:26.389 10360 10452 I python  : AND: Ran string
-11-11 14:03:26.389 10360 10452 I python  : Run user program, change dir and execute entrypoint
-11-11 14:03:26.469 10360 10452 I python  : [WARNING] [Config      ] Older configuration version detected (0 instead of 21)
-11-11 14:03:26.469 10360 10452 I python  : [WARNING] [Config      ] Upgrading configuration in progress.
-11-11 14:03:26.473 10360 10452 I python  : [INFO   ] [Logger      ] Record log in /data/user/0/digigammon.com.testcamera/files/app/.kivy/logs/kivy_21-11-11_0.txt
-11-11 14:03:26.473 10360 10452 I python  : [INFO   ] [Kivy        ] v2.0.0
-11-11 14:03:26.473 10360 10452 I python  : [INFO   ] [Kivy        ] Installed at "/data/user/0/digigammon.com.testcamera/files/app/_python_bundle/site-packages/kivy/__init__.pyc"
-11-11 14:03:26.473 10360 10452 I python  : [INFO   ] [Python      ] v3.8.9 (default, Nov 11 2021, 13:17:54) 
-11-11 14:03:26.473 10360 10452 I python  : [Clang 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec7462
-11-11 14:03:26.473 10360 10452 I python  : [INFO   ] [Python      ] Interpreter at ""
-11-11 14:03:27.131 10360 10452 I python  : [INFO   ] [Factory     ] 186 symbols loaded
-11-11 14:03:27.172 10360 10452 I python  : [INFO   ] [ImageLoaderFFPy] Using ffpyplayer 4.3.2
-11-11 14:03:27.172 10360 10452 I python  : [INFO   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_ffpyplayer (img_pil ignored)
-11-11 14:03:27.347 10360 10452 I python  : [INFO   ] [Window      ] Provider: sdl2
-11-11 14:03:27.364 10360 10452 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
-11-11 14:03:27.365 10360 10452 I python  : [INFO   ] [GL          ] Backend used <sdl2>
-11-11 14:03:27.365 10360 10452 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@0490.0 (GIT@85da404, I46ff5fc46f, 1606801434) (Date:11/30/20)'>
-11-11 14:03:27.365 10360 10452 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
-11-11 14:03:27.365 10360 10452 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 618'>
-11-11 14:03:27.366 10360 10452 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
-11-11 14:03:27.366 10360 10452 I python  : [INFO   ] [GL          ] Texture max size <16384>
-11-11 14:03:27.366 10360 10452 I python  : [INFO   ] [GL          ] Texture max units <16>
-11-11 14:03:27.387 10360 10452 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
-11-11 14:03:27.387 10360 10452 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
-11-11 14:03:27.571 10360 10360 I python  : [INFO   ] [WindowSDL   ] No running App found, pause.
-11-11 14:03:27.615 10360 10452 I python  : SDCARD is on :
-11-11 14:03:27.615 10360 10452 I python  : /storage/emulated/0
-11-11 14:03:27.615 10360 10452 I python  : The platform is Android
-11-11 14:03:27.947 10360 10452 I python  : [INFO   ] [Text        ] Provider: sdl2
-11-11 14:03:28.021 10360 10452 I python  : [WARNING] [Base        ] Unknown <android> provider
-11-11 14:03:28.021 10360 10452 I python  : [INFO   ] [Base        ] Start application main loop
-11-11 14:03:28.023 10360 10452 I python  : [INFO   ] [GL          ] NPOT texture support is available
-11-11 14:04:16.463 10360 10452 I python  : start_camera is called
-11-11 14:04:16.464 10360 10452 I python  :  Starting camera interface init
-11-11 14:04:16.475 10360 10452 I python  :  Got basic java objects
-11-11 14:04:16.475 10360 10452 I python  :  Getting data for camera 0
-11-11 14:04:16.480 10360 10452 I python  :  Got characteristics dict
-11-11 14:04:16.485 10360 10452 I python  :  Populating camera characteristics
-11-11 14:04:16.518 10360 10452 I python  :  Got stream configuration map
-11-11 14:04:16.523 10360 10452 I python  :  Got supported resolutions
-11-11 14:04:16.524 10360 10452 I python  :  Got facing: 1
-11-11 14:04:16.524 10360 10452 I python  :  Finished initing camera 0
-11-11 14:04:16.524 10360 10452 I python  :  Finished interpreting camera 0
-11-11 14:04:16.524 10360 10452 I python  :  Getting data for camera 1
-11-11 14:04:16.526 10360 10452 I python  :  Got characteristics dict
-11-11 14:04:16.527 10360 10452 I python  :  Populating camera characteristics
-11-11 14:04:16.532 10360 10452 I python  :  Got stream configuration map
-11-11 14:04:16.533 10360 10452 I python  :  Got supported resolutions
-11-11 14:04:16.534 10360 10452 I python  :  Got facing: 0
-11-11 14:04:16.534 10360 10452 I python  :  Finished initing camera 1
-11-11 14:04:16.534 10360 10452 I python  :  Finished interpreting camera 1
-11-11 14:04:16.535 10360 10452 I python  : Camera ID 0, facing BACK, resolutions [(4032, 3024), (4032, 2268), (4000, 3000), (4000, 2000), (3840, 2160), (3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:16.535 10360 10452 I python  : Camera ID 1, facing FRONT, resolutions [(3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:16.537 10360 10452 I python  :  On restart, state is PermissionRequestStates.UNKNOWN
-11-11 14:04:16.540 10360 10452 I python  : My smaller resolutions:
-11-11 14:04:16.540 10360 10452 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:16.540 10360 10452 I python  :  Chose resolution (1280, 720) from choices [(4032, 3024), (4032, 2268), (4000, 3000), (4000, 2000), (3840, 2160), (3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:16.682 10360 10360 I python  :  CALLBACK: camera event OPENED
-11-11 14:04:16.682 10360 10360 I python  :  Camera opened, preparing to start preview
-11-11 14:04:16.683 10360 10452 I python  :  Starting preview of camera {camera}
-11-11 14:04:16.683 10360 10452 I python  :  Creating capture stream with resolution (1280, 720)
-11-11 14:04:16.696 10360 10452 I python  :  Texture id is 0
-11-11 14:04:16.755 10360 10452 I python  :  Preview is set
-11-11 14:04:17.300 10360 10452 I python  : App texture changed to <Texture hash=3071208760 id=10 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
-11-11 14:04:17.303 10360 10360 I python  :  CALLBACK: capture event CONFIGURED
-11-11 14:04:17.311 10360 10360 I python  :  CALLBACK: capture event READY
-11-11 14:04:17.312 10360 10360 I python  :  Doing READY actions
-11-11 14:04:17.326 10360 10360 I python  :  CALLBACK: capture event ACTIVE
-11-11 14:04:26.107 10360 10452 I python  : change_camera is called
-11-11 14:04:26.460 10360 10360 I python  :  CALLBACK: camera event CLOSED
-11-11 14:04:26.460 10360 10360 I python  :  Ignoring camera event {action}
-11-11 14:04:26.462 10360 10452 I python  : My smaller resolutions:
-11-11 14:04:26.462 10360 10452 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:26.462 10360 10452 I python  :  Chose resolution (1280, 720) from choices [(3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:26.486 10360 10360 I python  :  CALLBACK: camera event OPENED
-11-11 14:04:26.486 10360 10360 I python  :  Camera opened, preparing to start preview
-11-11 14:04:26.488 10360 10452 I python  :  Starting preview of camera {camera}
-11-11 14:04:26.488 10360 10452 I python  : Correct became True
-11-11 14:04:26.488 10360 10452 I python  : tex_coords became [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0]
-11-11 14:04:26.488 10360 10452 I python  : Set 0!
-11-11 14:04:26.489 10360 10452 I python  :  Creating capture stream with resolution (1280, 720)
-11-11 14:04:26.500 10360 10452 I python  :  Texture id is 0
-11-11 14:04:26.507 10360 10452 I python  :  Preview is set
-11-11 14:04:26.711 10360 10360 I python  :  CALLBACK: capture event CONFIGURED
-11-11 14:04:26.711 10360 10452 I python  : App texture changed to <Texture hash=3071208608 id=11 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
-11-11 14:04:26.715 10360 10360 I python  :  CALLBACK: capture event READY
-11-11 14:04:26.715 10360 10360 I python  :  Doing READY actions
-11-11 14:04:26.721 10360 10360 I python  :  CALLBACK: capture event ACTIVE
-11-11 14:04:29.820 10360 10452 I python  : change_camera is called
-11-11 14:04:30.058 10360 10452 I python  : My smaller resolutions:
-11-11 14:04:30.058 10360 10452 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:30.058 10360 10452 I python  :  Chose resolution (1280, 720) from choices [(4032, 3024), (4032, 2268), (4000, 3000), (4000, 2000), (3840, 2160), (3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:30.059 10360 10360 I python  :  CALLBACK: camera event CLOSED
-11-11 14:04:30.059 10360 10360 I python  :  Ignoring camera event {action}
-11-11 14:04:30.088 10360 10360 I python  :  CALLBACK: camera event OPENED
-11-11 14:04:30.089 10360 10360 I python  :  Camera opened, preparing to start preview
-11-11 14:04:30.090 10360 10452 I python  :  Starting preview of camera {camera}
-11-11 14:04:30.090 10360 10452 I python  : Correct became False
-11-11 14:04:30.090 10360 10452 I python  : tex_coords became [0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
-11-11 14:04:30.090 10360 10452 I python  : Set 1!
-11-11 14:04:30.091 10360 10452 I python  :  Creating capture stream with resolution (1280, 720)
-11-11 14:04:30.094 10360 10452 I python  :  Texture id is 0
-11-11 14:04:30.101 10360 10452 I python  :  Preview is set
-11-11 14:04:30.286 10360 10360 I python  :  CALLBACK: capture event CONFIGURED
-11-11 14:04:30.287 10360 10360 I python  :  CALLBACK: capture event READY
-11-11 14:04:30.287 10360 10360 I python  :  Doing READY actions
-11-11 14:04:30.288 10360 10452 I python  : App texture changed to <Texture hash=3071209064 id=12 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
-11-11 14:04:30.295 10360 10360 I python  :  CALLBACK: capture event ACTIVE
-11-11 14:04:32.412 10360 10452 I python  : change_camera is called
-11-11 14:04:32.742 10360 10360 I python  :  CALLBACK: camera event CLOSED
-11-11 14:04:32.742 10360 10360 I python  :  Ignoring camera event {action}
-11-11 14:04:32.744 10360 10452 I python  : My smaller resolutions:
-11-11 14:04:32.744 10360 10452 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:32.744 10360 10452 I python  :  Chose resolution (1280, 720) from choices [(3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
-11-11 14:04:32.770 10360 10360 I python  :  CALLBACK: camera event OPENED
-11-11 14:04:32.770 10360 10360 I python  :  Camera opened, preparing to start preview
-11-11 14:04:32.782 10360 10452 I python  :  Starting preview of camera {camera}
-11-11 14:04:32.782 10360 10452 I python  : Correct became True
-11-11 14:04:32.782 10360 10452 I python  : tex_coords became [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0]
-11-11 14:04:32.782 10360 10452 I python  : Set 0!
-11-11 14:04:32.783 10360 10452 I python  :  Creating capture stream with resolution (1280, 720)
-11-11 14:04:32.787 10360 10452 I python  :  Texture id is 0
-11-11 14:04:32.797 10360 10452 I python  :  Preview is set
-11-11 14:04:32.980 10360 10452 I python  : App texture changed to <Texture hash=3071208304 id=13 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
-11-11 14:04:32.992 10360 10360 I python  :  CALLBACK: capture event CONFIGURED
-11-11 14:04:33.008 10360 10360 I python  :  CALLBACK: capture event READY
-11-11 14:04:33.009 10360 10360 I python  :  Doing READY actions
-11-11 14:04:33.015 10360 10360 I python  :  CALLBACK: capture event ACTIVE
+11-19 11:33:29.220 14782 14881 I python  : Initializing Python for Android
+11-19 11:33:29.220 14782 14881 I python  : Setting additional env vars from p4a_env_vars.txt
+11-19 11:33:29.220 14782 14881 I python  : Changing directory to the one provided by ANDROID_ARGUMENT
+11-19 11:33:29.220 14782 14881 I python  : /data/user/0/org.test.myapp/files/app
+11-19 11:33:29.221 14782 14881 I python  : Preparing to initialize python
+11-19 11:33:29.221 14782 14881 I python  : _python_bundle dir exists
+11-19 11:33:29.221 14782 14881 I python  : calculated paths to be...
+11-19 11:33:29.221 14782 14881 I python  : /data/user/0/org.test.myapp/files/app/_python_bundle/stdlib.zip:/data/user/0/org.test.myapp/files/app/_python_bundle/modules
+11-19 11:33:29.224 14782 14881 I python  : set wchar paths...
+11-19 11:33:29.270 14782 14881 I python  : Initialized python
+11-19 11:33:29.270 14782 14881 I python  : AND: Init threads
+11-19 11:33:29.270 14782 14881 I python  : testing python print redirection
+11-19 11:33:29.271 14782 14881 I python  : Android path ['.', '/data/user/0/org.test.myapp/files/app/_python_bundle/stdlib.zip', '/data/user/0/org.test.myapp/files/app/_python_bundle/modules', '/data/user/0/org.test.myapp/files/app/_python_bundle/site-packages']
+11-19 11:33:29.271 14782 14881 I python  : os.environ is environ({'PATH': '/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin', 'ANDROID_BOOTLOGO': '1', 'ANDROID_ROOT': '/system', 'ANDROID_ASSETS': '/system/app', 'ANDROID_DATA': '/data', 'ANDROID_STORAGE': '/storage', 'ANDROID_ART_ROOT': '/apex/com.android.art', 'ANDROID_I18N_ROOT': '/apex/com.android.i18n', 'ANDROID_TZDATA_ROOT': '/apex/com.android.tzdata', 'EXTERNAL_STORAGE': '/sdcard', 'ASEC_MOUNTPOINT': '/mnt/asec', 'DOWNLOAD_CACHE': '/data/cache', 'BOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.wifi/javalib/framework-wifi.jar', 'DEX2OATBOOTCLASSPATH': '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar', 'SYSTEMSERVERCLASSPATH': '/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/ethernet-service.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.permission/javalib/service-permission.jar', 'ANDROID_SOCKET_zygote_secondary': '17', 'ANDROID_SOCKET_usap_pool_secondary': '20', 'ANDROID_ENTRYPOINT': 'main.pyc', 'ANDROID_ARGUMENT': '/data/user/0/org.test.myapp/files/app', 'ANDROID_APP_PATH': '/data/user/0/org.test.myapp/files/app', 'ANDROID_PRIVATE': '/data/user/0/org.test.myapp/files', 'ANDROID_UNPACK': '/data/user/0/org.test.myapp/files/app', 'PYTHONHOME': '/data/user/0/org.test.myapp/files/app', 'PYTHONPATH': '/data/user/0/org.test.myapp/files/app:/data/user/0/org.test.myapp/files/app/lib', 'PYTHONOPTIMIZE': '2', 'P4A_BOOTSTRAP': 'SDL2', 'PYTHON_NAME': 'python', 'P4A_IS_WINDOWED': 'True', 'P4A_ORIENTATION': 'landscape', 'P4A_NUMERIC_VERSION': 'None', 'P4A_MINSDK': '21', 'LC_CTYPE': 'C.UTF-8'})
+11-19 11:33:29.271 14782 14881 I python  : Android kivy bootstrap done. __name__ is __main__
+11-19 11:33:29.271 14782 14881 I python  : AND: Ran string
+11-19 11:33:29.271 14782 14881 I python  : Run user program, change dir and execute entrypoint
+11-19 11:33:29.353 14782 14881 I python  : [WARNING] [Config      ] Older configuration version detected (0 instead of 21)
+11-19 11:33:29.353 14782 14881 I python  : [WARNING] [Config      ] Upgrading configuration in progress.
+11-19 11:33:29.357 14782 14881 I python  : [INFO   ] [Logger      ] Record log in /data/user/0/org.test.myapp/files/app/.kivy/logs/kivy_21-11-19_0.txt
+11-19 11:33:29.357 14782 14881 I python  : [INFO   ] [Kivy        ] v2.0.0
+11-19 11:33:29.357 14782 14881 I python  : [INFO   ] [Kivy        ] Installed at "/data/user/0/org.test.myapp/files/app/_python_bundle/site-packages/kivy/__init__.pyc"
+11-19 11:33:29.357 14782 14881 I python  : [INFO   ] [Python      ] v3.8.9 (default, Nov 17 2021, 15:41:45) 
+11-19 11:33:29.357 14782 14881 I python  : [Clang 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec7462
+11-19 11:33:29.357 14782 14881 I python  : [INFO   ] [Python      ] Interpreter at ""
+11-19 11:33:29.922 14782 14881 I python  : [INFO   ] [Factory     ] 186 symbols loaded
+11-19 11:33:29.956 14782 14881 I python  : [INFO   ] [Image       ] Providers: img_tex, img_dds, img_sdl2 (img_pil, img_ffpyplayer ignored)
+11-19 11:33:30.134 14782 14881 I python  : [INFO   ] [Window      ] Provider: sdl2
+11-19 11:33:30.151 14782 14881 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
+11-19 11:33:30.152 14782 14881 I python  : [INFO   ] [GL          ] Backend used <sdl2>
+11-19 11:33:30.152 14782 14881 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@0490.0 (GIT@85da404, I46ff5fc46f, 1606801434) (Date:11/30/20)'>
+11-19 11:33:30.152 14782 14881 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
+11-19 11:33:30.152 14782 14881 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 618'>
+11-19 11:33:30.153 14782 14881 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
+11-19 11:33:30.153 14782 14881 I python  : [INFO   ] [GL          ] Texture max size <16384>
+11-19 11:33:30.153 14782 14881 I python  : [INFO   ] [GL          ] Texture max units <16>
+11-19 11:33:30.174 14782 14881 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
+11-19 11:33:30.175 14782 14881 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+11-19 11:33:30.361 14782 14782 I python  : [INFO   ] [WindowSDL   ] No running App found, pause.
+11-19 11:33:30.387 14782 14881 I python  : SDCARD is on :
+11-19 11:33:30.387 14782 14881 I python  : /storage/emulated/0
+11-19 11:33:30.387 14782 14881 I python  : The platform is Android
+11-19 11:33:30.424 14782 14881 I python  :  USB Manager is set
+11-19 11:33:30.679 14782 14881 I python  :  Debug0:Start
+11-19 11:33:30.679 14782 14881 I python  : mUVCCameraView is = ['__class__', '__cls_storage', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__javaclass__', '__javaconstructor__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__pyx_vtable__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_class', 'aspectRatio', 'captureStillImage', 'clone', 'equals', 'finalize', 'getAspectRatio', 'getClass', 'getSurface', 'getSurfaceTexture', 'hasSurface', 'hashCode', 'identityHashCode', 'notify', 'notifyAll', 'onPause', 'onResume', 'setAspectRatio', 'setCallback', 'setVideoEncoder', 'surface', 'surfaceTexture', 'toString', 'wait']
+11-19 11:33:30.679 14782 14881 I python  :  Debug0:End
+11-19 11:33:30.680 14782 14881 I python  :  Debug0:Start
+11-19 11:33:30.680 14782 14881 I python  : mUVCCameraHelper is = ['FRAME_FORMAT_MJPEG', 'FRAME_FORMAT_YUYV', 'MODE_BRIGHTNESS', 'MODE_CONTRAST', 'ROOT_PATH', 'SUFFIX_JPEG', 'SUFFIX_MP4', 'TAG', '__class__', '__cls_storage', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__javaclass__', '__javaconstructor__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__pyx_vtable__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_class', 'access$002', 'access$100', 'access$200', 'cameraOpened', 'capturePicture', 'checkSupportFlag', 'clone', 'closeCamera', 'createUVCCamera', 'equals', 'finalize', 'getClass', 'getInstance', 'getModelValue', 'getPreviewHeight', 'getPreviewWidth', 'getSupportedPreviewSizes', 'getUSBMonitor', 'getUsbDeviceCount', 'getUsbDeviceList', 'hashCode', 'identityHashCode', 'initUSBMonitor', 'instance', 'isCameraOpened', 'isPushing', 'mActivity', 'mCamView', 'mCameraHandler', 'mCameraHelper', 'mCtrlBlock', 'mFrameFormat', 'mUSBMonitor', 'notify', 'notifyAll', 'openCamera', 'previewHeight', 'previewWidth', 'pushing', 'registerUSB', 'release', 'requestPermission', 'resetModelValue', 'setDefaultFrameFormat', 'setDefaultPreviewSize', 'setModelValue', 'setOnPreviewFrameListener', 'startCameraFoucs', 'startPreview', 'startPusher', 'stopPreview', 'stopPusher', 'supportedPreviewSizes', 'toString', 'uSBMonitor', 'unregisterUSB', 'updateResolution', 'usbDeviceCount', 'usbDeviceList', 'wait']
+11-19 11:33:30.680 14782 14881 I python  :  Debug0:End
+11-19 11:33:30.710 14782 14881 I python  : [INFO   ] [Text        ] Provider: sdl2
+11-19 11:33:30.769 14782 14881 I python  : [WARNING] [Base        ] Unknown <android> provider
+11-19 11:33:30.769 14782 14881 I python  : [INFO   ] [Base        ] Start application main loop
+11-19 11:33:30.771 14782 14881 I python  : [INFO   ] [GL          ] NPOT texture support is available
+11-19 11:33:33.878 14782 14881 I python  : start_camera is called
+11-19 11:33:33.879 14782 14881 I python  :  Starting camera interface init
+11-19 11:33:33.931 14782 14881 I python  :  Got USB devices and now printing:
+11-19 11:33:33.931 14782 14881 I python  : <java.util.HashMap at 0xc3e072d0 jclass=java/util/HashMap jself=<LocalRef obj=0x560a at 0xc3e15100>>
+11-19 11:33:33.931 14782 14881 I python  :  DONE!
+11-19 11:33:33.940 14782 14881 I python  :  Got basic java objects
+11-19 11:33:33.941 14782 14881 I python  :  Getting data for camera 0
+11-19 11:33:33.945 14782 14881 I python  :  Got characteristics dict
+11-19 11:33:33.950 14782 14881 I python  :  Populating camera characteristics
+11-19 11:33:33.971 14782 14881 I python  :  Got stream configuration map
+11-19 11:33:33.975 14782 14881 I python  :  Got supported resolutions
+11-19 11:33:33.976 14782 14881 I python  :  Got facing: 1
+11-19 11:33:33.976 14782 14881 I python  :  Finished initing camera 0
+11-19 11:33:33.976 14782 14881 I python  :  Finished interpreting camera 0
+11-19 11:33:33.976 14782 14881 I python  :  Getting data for camera 1
+11-19 11:33:33.978 14782 14881 I python  :  Got characteristics dict
+11-19 11:33:33.979 14782 14881 I python  :  Populating camera characteristics
+11-19 11:33:33.984 14782 14881 I python  :  Got stream configuration map
+11-19 11:33:33.985 14782 14881 I python  :  Got supported resolutions
+11-19 11:33:33.986 14782 14881 I python  :  Got facing: 0
+11-19 11:33:33.986 14782 14881 I python  :  Finished initing camera 1
+11-19 11:33:33.986 14782 14881 I python  :  Finished interpreting camera 1
+11-19 11:33:33.986 14782 14881 I python  :  Printing camera ID's:
+11-19 11:33:33.986 14782 14881 I python  :  DONE!
+11-19 11:33:33.986 14782 14881 I python  : Camera ID 0, facing BACK, resolutions [(4032, 3024), (4032, 2268), (4000, 3000), (4000, 2000), (3840, 2160), (3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:33.986 14782 14881 I python  : Camera ID 1, facing FRONT, resolutions [(3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:33.990 14782 14881 I python  :  On restart, state is PermissionRequestStates.UNKNOWN
+11-19 11:33:33.993 14782 14881 I python  : My smaller resolutions:
+11-19 11:33:33.993 14782 14881 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:33.993 14782 14881 I python  :  Chose resolution (1280, 720) from choices [(4032, 3024), (4032, 2268), (4000, 3000), (4000, 2000), (3840, 2160), (3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:34.151 14782 14782 I python  :  CALLBACK: camera event OPENED
+11-19 11:33:34.152 14782 14782 I python  :  Camera opened, preparing to start preview
+11-19 11:33:34.152 14782 14881 I python  :  Starting preview of camera {camera}
+11-19 11:33:34.153 14782 14881 I python  :  Creating capture stream with resolution (1280, 720)
+11-19 11:33:34.164 14782 14881 I python  :  Texture id is 0
+11-19 11:33:34.178 14782 14881 I python  :  Preview is set
+11-19 11:33:34.647 14782 14881 I python  : App texture changed to <Texture hash=3292277768 id=12 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
+11-19 11:33:34.648 14782 14782 I python  :  CALLBACK: capture event CONFIGURED
+11-19 11:33:34.665 14782 14782 I python  :  CALLBACK: capture event READY
+11-19 11:33:34.665 14782 14782 I python  :  Doing READY actions
+11-19 11:33:34.675 14782 14782 I python  :  CALLBACK: capture event ACTIVE
+11-19 11:33:38.355 14782 14881 I python  : change_camera is called
+11-19 11:33:38.689 14782 14881 I python  : My smaller resolutions:
+11-19 11:33:38.689 14782 14881 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:38.691 14782 14881 I python  :  Chose resolution (1280, 720) from choices [(3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:38.693 14782 14782 I python  :  CALLBACK: camera event CLOSED
+11-19 11:33:38.695 14782 14782 I python  :  Ignoring camera event {action}
+11-19 11:33:38.732 14782 14782 I python  :  CALLBACK: camera event OPENED
+11-19 11:33:38.732 14782 14782 I python  :  Camera opened, preparing to start preview
+11-19 11:33:38.737 14782 14881 I python  :  Starting preview of camera {camera}
+11-19 11:33:38.737 14782 14881 I python  : Correct became True
+11-19 11:33:38.737 14782 14881 I python  : tex_coords became [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0]
+11-19 11:33:38.737 14782 14881 I python  : Set 0!
+11-19 11:33:38.737 14782 14881 I python  :  Creating capture stream with resolution (1280, 720)
+11-19 11:33:38.741 14782 14881 I python  :  Texture id is 0
+11-19 11:33:38.747 14782 14881 I python  :  Preview is set
+11-19 11:33:38.970 14782 14881 I python  : App texture changed to <Texture hash=3292278224 id=13 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
+11-19 11:33:38.972 14782 14782 I python  :  CALLBACK: capture event CONFIGURED
+11-19 11:33:38.975 14782 14782 I python  :  CALLBACK: capture event READY
+11-19 11:33:38.976 14782 14782 I python  :  Doing READY actions
+11-19 11:33:38.981 14782 14782 I python  :  CALLBACK: capture event ACTIVE
+11-19 11:33:40.077 14782 14881 I python  : change_camera is called
+11-19 11:33:40.303 14782 14782 I python  :  CALLBACK: camera event CLOSED
+11-19 11:33:40.304 14782 14782 I python  :  Ignoring camera event {action}
+11-19 11:33:40.305 14782 14881 I python  : My smaller resolutions:
+11-19 11:33:40.305 14782 14881 I python  : [(1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:40.305 14782 14881 I python  :  Chose resolution (1280, 720) from choices [(4032, 3024), (4032, 2268), (4000, 3000), (4000, 2000), (3840, 2160), (3264, 2448), (3264, 1836), (3200, 2400), (2688, 1512), (2592, 1944), (2560, 1280), (2048, 1536), (1920, 1440), (1920, 1080), (1920, 960), (1600, 1200), (1440, 1080), (1280, 960), (1280, 720), (1024, 768), (800, 600), (720, 480), (640, 480), (640, 360), (352, 288), (320, 240), (176, 144)]
+11-19 11:33:40.334 14782 14782 I python  :  CALLBACK: camera event OPENED
+11-19 11:33:40.335 14782 14782 I python  :  Camera opened, preparing to start preview
+11-19 11:33:40.338 14782 14881 I python  :  Starting preview of camera {camera}
+11-19 11:33:40.338 14782 14881 I python  : Correct became False
+11-19 11:33:40.338 14782 14881 I python  : tex_coords became [0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+11-19 11:33:40.338 14782 14881 I python  : Set 1!
+11-19 11:33:40.338 14782 14881 I python  :  Creating capture stream with resolution (1280, 720)
+11-19 11:33:40.342 14782 14881 I python  :  Texture id is 0
+11-19 11:33:40.348 14782 14881 I python  :  Preview is set
+11-19 11:33:40.555 14782 14881 I python  : App texture changed to <Texture hash=3292278528 id=14 size=(1280, 720) colorfmt='rgba' bufferfmt='ubyte' source=None observers=0>
+11-19 11:33:40.557 14782 14782 I python  :  CALLBACK: capture event CONFIGURED
+11-19 11:33:40.557 14782 14782 I python  :  CALLBACK: capture event READY
+11-19 11:33:40.558 14782 14782 I python  :  Doing READY actions
+11-19 11:33:40.591 14782 14782 I python  :  CALLBACK: capture event ACTIVE

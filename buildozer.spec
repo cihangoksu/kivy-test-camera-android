@@ -1,12 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Testcamera
+title = My Application
+
 # (str) Package name
-package.name = testcamera
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = digigammon.com
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -35,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,android,pyjnius,ffpyplayer,ffpyplayer_codecs,numpy
+requirements = python3,kivy,numpy
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -84,10 +85,11 @@ fullscreen = 0
 #android.presplash_color = #FFFFFF
 
 # (list) Permissions
+#android.permissions = INTERNET
 android.permissions = CAMERA,RECORD_AUDIO
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 27
+android.api = 28
 
 # (int) Minimum API your APK will support.
 #android.minapi = 21
@@ -144,28 +146,42 @@ android.permissions = CAMERA,RECORD_AUDIO
 # down the build process. Allows wildcards matching, for example:
 # OUYA-ODK/libs/*.jar
 #android.add_jars = foo.jar,bar.jar,path/to/more/*.jar
+# android.add_jars = jarfiles/junit-4.12.jar
+android.add_jars = jarfiles/R.jar
+
 
 # (list) List of Java files to add to the android project (can be java or a
 # directory containing the files)
 #android.add_src =
+# android.add_src = net
+android.add_src = net, libusbcamera
 
 # (list) Android AAR archives to add (currently works only with sdl2_gradle
 # bootstrap)
 #android.add_aars =
+android.add_aars = libusbcamera/libs/libusbcommon_v4.1.1.aar
 
 # (list) Gradle dependencies to add (currently works only with sdl2_gradle
 # bootstrap)
 #android.gradle_dependencies =
+#android.gradle_dependencies = 'androidx.collection:collection:1.1.0', 'com.jakewharton:butterknife-annotations:10.2.0', 'androidx.arch.core:core-common:2.1.0', 'androidx.lifecycle:lifecycle-common:2.1.0', 'androidx.annotation:annotation:1.1.0', 'androidx.appcompat:appcompat:1.1.0@aar', 'androidx.fragment:fragment:1.1.0@aar', 'androidx.appcompat:appcompat-resources:1.1.0@aar', 'androidx.drawerlayout:drawerlayout:1.0.0@aar', 'com.jakewharton:butterknife:10.2.0@aar', 'com.jakewharton:butterknife-runtime:10.2.0@aar', 'androidx.viewpager:viewpager:1.0.0@aar', 'androidx.loader:loader:1.0.0@aar', 'androidx.activity:activity:1.0.0@aar', 'androidx.vectordrawable:vectordrawable-animated:1.1.0@aar', 'androidx.vectordrawable:vectordrawable:1.1.0@aar', 'androidx.customview:customview:1.0.0@aar', 'androidx.core:core:1.1.0@aar', 'androidx.cursoradapter:cursoradapter:1.0.0@aar', 'androidx.versionedparcelable:versionedparcelable:1.1.0@aar', 'androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar', 'androidx.lifecycle:lifecycle-runtime:2.1.0@aar', 'androidx.savedstate:savedstate:1.0.0@aar', 'androidx.interpolator:interpolator:1.0.0@aar', 'androidx.lifecycle:lifecycle-livedata:2.0.0@aar', 'androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar', 'androidx.arch.core:core-runtime:2.0.0@aar'
+
+# android.gradle_dependencies = 'com.github.jiangdongguo:AndroidUSBCamera:2.3.7'
+
 
 # (list) add java compile options
 # this can for example be necessary when importing certain java libraries using the 'android.gradle_dependencies' option
 # see https://developer.android.com/studio/write/java8-support for further information
 # android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
+android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
+
 
 # (list) Gradle repositories to add {can be necessary for some android.gradle_dependencies}
 # please enclose in double quotes 
 # e.g. android.gradle_repositories = "maven { url 'https://kotlin.bintray.com/ktor' }"
 #android.add_gradle_repositories =
+android.add_gradle_repositories = "maven { url 'https://jitpack.io' }"
+
 
 # (list) packaging options to add 
 # see https://google.github.io/android-gradle-dsl/current/com.android.build.gradle.internal.dsl.PackagingOptions.html
@@ -176,6 +192,9 @@ android.permissions = CAMERA,RECORD_AUDIO
 
 # (list) Java classes to add as activities to the manifest.
 #android.add_activities = com.example.ExampleActivity
+
+#### Androidx options ----- cgoksu for UVCCamera
+android.enable_androidx = True
 
 # (str) OUYA Console category. Should be one of GAME or APP
 # If you leave this blank, OUYA support will not be enabled
@@ -196,6 +215,8 @@ android.permissions = CAMERA,RECORD_AUDIO
 #android.add_libs_arm64_v8a = libs/android-v8/*.so
 #android.add_libs_x86 = libs/android-x86/*.so
 #android.add_libs_mips = libs/android-mips/*.so
+android.add_libs_armeabi_v7a = jniLibs/armeabi-v7a/*.so
+
 
 # (bool) Indicate whether the screen should stay on
 # Don't forget to add the WAKE_LOCK permission if you set this to True
@@ -233,7 +254,6 @@ android.arch = armeabi-v7a
 
 # (str) python-for-android branch to use, defaults to master
 #p4a.branch = master
-p4a.branch = develop
 
 # (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
 #p4a.source_dir =
